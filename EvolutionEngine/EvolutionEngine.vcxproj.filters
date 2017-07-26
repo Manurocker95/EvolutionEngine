@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\OpenGL Toolkit Headers">
+      <UniqueIdentifier>{66c54633-6dca-4cc8-bf61-37357ec2e6c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OpenGL Toolkit cpp">
+      <UniqueIdentifier>{38385b8b-825b-4b2f-ad5b-dafba5e1dcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Evolution Engine cpp">
+      <UniqueIdentifier>{bb7bbd8c-3694-4f95-a2cb-d7b4550d46a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Evolution Engine headers">
+      <UniqueIdentifier>{9d274e92-83ee-4e44-8929-f79493ac8381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Targa">
+      <UniqueIdentifier>{61cd23cf-cbc6-47aa-9520-e23408fa3c43}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Libraries\code\sources\Cube.cpp">
+      <Filter>Source Files\OpenGL Toolkit cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\code\sources\Light.cpp">
+      <Filter>Source Files\OpenGL Toolkit cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\code\sources\Material.cpp">
+      <Filter>Source Files\OpenGL Toolkit cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\code\sources\Scene.cpp">
+      <Filter>Source Files\OpenGL Toolkit cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\code\sources\Shader.cpp">
+      <Filter>Source Files\OpenGL Toolkit cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\code\sources\Shader_Program.cpp">
+      <Filter>Source Files\OpenGL Toolkit cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\code\sources\Sphere.cpp">
+      <Filter>Source Files\OpenGL Toolkit cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\code\sources\Vertex_Array_Object.cpp">
+      <Filter>Source Files\OpenGL Toolkit cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\code\sources\Vertex_Buffer_Object.cpp">
+      <Filter>Source Files\OpenGL Toolkit cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\SceneManager.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\main.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\targa\src\targa.c">
+      <Filter>Targa</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Kernel.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\EvolutionScene.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\DebugManager.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\EvolutionWindow.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\EvolutionGame.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\TransformModule.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Module.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Physics_Module.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Node.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Shader.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Shader_Program.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\tiny_obj_loader.cc">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Render_Module.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Entity.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Module_Input.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSource\Module_Control.cpp">
+      <Filter>Source Files\Evolution Engine cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Libraries\code\headers\Vertex_Shader.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Vertex_Array_Object.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Vertex_Buffer_Object.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Camera.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Cube.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Drawable.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Fragment_Shader.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Light.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Material.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Math.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Model.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\OpenGL.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Scene.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Scene_Object.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Shader.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Shader_Program.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Shape.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Shape_Set.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\code\headers\Sphere.hpp">
+      <Filter>Header Files\OpenGL Toolkit Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Component.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Entity.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Kernel.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Message.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Message_Handler.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Module.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Physics_Module.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\SceneManager.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Settings.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Task.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\targa\include\targa.h">
+      <Filter>Targa</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Color_Buffer_Rgba8888.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Color_Buffer.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\EvolutionScene.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Render_Module.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\DebugManager.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\EvolutionWindow.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Transform_Module.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\EvolutionGame.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Fragment_Shader.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Node.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Shader.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Shader_Program.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\tiny_obj_loader.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Vertex_Shader.hpp">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Module_Input.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Script_Module.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSource\Module_Control.h">
+      <Filter>Header Files\Evolution Engine headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scene\scene.evolscene" />
+  </ItemGroup>
+</Project>

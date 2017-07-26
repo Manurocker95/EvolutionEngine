@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0FAF5EC9-F7B5-4999-8778-1CD6C7737281}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EvolutionEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\EvolutionEngine\Libraries\bullet-2.84\src;$(SolutionDir)\EvolutionEngine\Libraries\cpp-toolkit\headers;$(SolutionDir)\EvolutionEngine\Libraries\rapidxml;$(SolutionDir)\EvolutionEngine\Libraries\targa\include;$(SolutionDir)\EvolutionEngine\Libraries\bullet-2.84\src;$(SolutionDir)\EvolutionEngine\Libraries\glew\include;$(SolutionDir)\EvolutionEngine\Libraries\code\headers;$(SolutionDir)\EvolutionEngine\Libraries\glm-0.9.7.4\include;$(SolutionDir)\EvolutionEngine\Libraries\glbinding-2.0.0\include;$(SolutionDir)\EvolutionEngine\Libraries\sfml-2.3-vs-2015\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Debug;$(SolutionDir)\EvolutionEngine\Libraries\bullet-2.84\lib\vs-2015\32bit;$(SolutionDir)\EvolutionEngine\Libraries\glew\lib;$(SolutionDir)\EvolutionEngine\Libraries\glbinding-2.0.0\lib\x32;$(SolutionDir)\EvolutionEngine\Libraries\sfml-2.3-vs-2015\lib;$(SolutionDir)\EvolutionEngine\Libraries\assimp-3.2-vs2015\lib\x32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>BulletDynamics-debug.lib;BulletCollision-debug.lib;LinearMath-debug.lib;glew32s.lib;OpenGL Toolkit.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;sfml-main-d.lib;glbinding-debug.lib;opengl32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)\EvolutionEngine\Libraries\bullet-2.84\src;$(SolutionDir)\EvolutionEngine\Libraries\cpp-toolkit\headers;$(SolutionDir)\EvolutionEngine\Libraries\rapidxml;$(SolutionDir)\EvolutionEngine\Libraries\targa\include;$(SolutionDir)\EvolutionEngine\Libraries\bullet-2.84\src;$(SolutionDir)\EvolutionEngine\Libraries\glew\include;$(SolutionDir)\EvolutionEngine\Libraries\code\headers;$(SolutionDir)\EvolutionEngine\Libraries\glm-0.9.7.4\include;$(SolutionDir)\EvolutionEngine\Libraries\glbinding-2.0.0\include;$(SolutionDir)\EvolutionEngine\Libraries\sfml-2.3-vs-2015\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Release;$(SolutionDir)\EvolutionEngine\Libraries\bullet-2.84\lib\vs-2015\32bit;$(SolutionDir)\EvolutionEngine\Libraries\glew\lib;$(SolutionDir)\EvolutionEngine\Libraries\glbinding-2.0.0\lib\x32;$(SolutionDir)\EvolutionEngine\Libraries\sfml-2.3-vs-2015\lib;$(SolutionDir)\EvolutionEngine\Libraries\assimp-3.2-vs2015\lib\x32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OpenGL Toolkit Release.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;glew32s.lib;OpenGL Toolkit.lib;sfml-system-s.lib;sfml-window-s.lib;sfml-main.lib;glbinding-release.lib;opengl32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="EngineSource\DebugManager.cpp" />
+    <ClCompile Include="EngineSource\Entity.cpp" />
+    <ClCompile Include="EngineSource\EvolutionScene.cpp" />
+    <ClCompile Include="EngineSource\EvolutionGame.cpp" />
+    <ClCompile Include="EngineSource\Kernel.cpp" />
+    <ClCompile Include="EngineSource\main.cpp" />
+    <ClCompile Include="EngineSource\Module.cpp" />
+    <ClCompile Include="EngineSource\Module_Control.cpp" />
+    <ClCompile Include="EngineSource\Module_Input.cpp" />
+    <ClCompile Include="EngineSource\Node.cpp" />
+    <ClCompile Include="EngineSource\Physics_Module.cpp" />
+    <ClCompile Include="EngineSource\Render_Module.cpp" />
+    <ClCompile Include="EngineSource\SceneManager.cpp" />
+    <ClCompile Include="EngineSource\EvolutionWindow.cpp" />
+    <ClCompile Include="EngineSource\Shader.cpp" />
+    <ClCompile Include="EngineSource\Shader_Program.cpp" />
+    <ClCompile Include="EngineSource\tiny_obj_loader.cc" />
+    <ClCompile Include="EngineSource\TransformModule.cpp" />
+    <ClCompile Include="Libraries\code\sources\Cube.cpp" />
+    <ClCompile Include="Libraries\code\sources\Light.cpp" />
+    <ClCompile Include="Libraries\code\sources\Material.cpp" />
+    <ClCompile Include="Libraries\code\sources\Scene.cpp" />
+    <ClCompile Include="Libraries\code\sources\Shader.cpp" />
+    <ClCompile Include="Libraries\code\sources\Shader_Program.cpp" />
+    <ClCompile Include="Libraries\code\sources\Sphere.cpp" />
+    <ClCompile Include="Libraries\code\sources\Vertex_Array_Object.cpp" />
+    <ClCompile Include="Libraries\code\sources\Vertex_Buffer_Object.cpp" />
+    <ClCompile Include="Libraries\targa\src\targa.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EngineSource\Color_Buffer.hpp" />
+    <ClInclude Include="EngineSource\Color_Buffer_Rgba8888.hpp" />
+    <ClInclude Include="EngineSource\Component.hpp" />
+    <ClInclude Include="EngineSource\DebugManager.h" />
+    <ClInclude Include="EngineSource\Entity.hpp" />
+    <ClInclude Include="EngineSource\EvolutionScene.hpp" />
+    <ClInclude Include="EngineSource\EvolutionGame.h" />
+    <ClInclude Include="EngineSource\Fragment_Shader.hpp" />
+    <ClInclude Include="EngineSource\Kernel.hpp" />
+    <ClInclude Include="EngineSource\Message.hpp" />
+    <ClInclude Include="EngineSource\Message_Handler.h" />
+    <ClInclude Include="EngineSource\Module.hpp" />
+    <ClInclude Include="EngineSource\Module_Control.h" />
+    <ClInclude Include="EngineSource\Module_Input.h" />
+    <ClInclude Include="EngineSource\Node.h" />
+    <ClInclude Include="EngineSource\Physics_Module.h" />
+    <ClInclude Include="EngineSource\Render_Module.h" />
+    <ClInclude Include="EngineSource\SceneManager.h" />
+    <ClInclude Include="EngineSource\Script_Module.h" />
+    <ClInclude Include="EngineSource\Settings.h" />
+    <ClInclude Include="EngineSource\Shader.hpp" />
+    <ClInclude Include="EngineSource\Shader_Program.hpp" />
+    <ClInclude Include="EngineSource\Task.hpp" />
+    <ClInclude Include="EngineSource\tiny_obj_loader.h" />
+    <ClInclude Include="EngineSource\Transform_Module.hpp" />
+    <ClInclude Include="EngineSource\EvolutionWindow.h" />
+    <ClInclude Include="EngineSource\Vertex_Shader.hpp" />
+    <ClInclude Include="Libraries\code\headers\Camera.hpp" />
+    <ClInclude Include="Libraries\code\headers\Cube.hpp" />
+    <ClInclude Include="Libraries\code\headers\Drawable.hpp" />
+    <ClInclude Include="Libraries\code\headers\Fragment_Shader.hpp" />
+    <ClInclude Include="Libraries\code\headers\Light.hpp" />
+    <ClInclude Include="Libraries\code\headers\Material.hpp" />
+    <ClInclude Include="Libraries\code\headers\Math.hpp" />
+    <ClInclude Include="Libraries\code\headers\Model.hpp" />
+    <ClInclude Include="Libraries\code\headers\OpenGL.hpp" />
+    <ClInclude Include="Libraries\code\headers\Scene.hpp" />
+    <ClInclude Include="Libraries\code\headers\Scene_Object.hpp" />
+    <ClInclude Include="Libraries\code\headers\Shader.hpp" />
+    <ClInclude Include="Libraries\code\headers\Shader_Program.hpp" />
+    <ClInclude Include="Libraries\code\headers\Shape.hpp" />
+    <ClInclude Include="Libraries\code\headers\Shape_Set.hpp" />
+    <ClInclude Include="Libraries\code\headers\Sphere.hpp" />
+    <ClInclude Include="Libraries\code\headers\Vertex_Array_Object.hpp" />
+    <ClInclude Include="Libraries\code\headers\Vertex_Buffer_Object.hpp" />
+    <ClInclude Include="Libraries\code\headers\Vertex_Shader.hpp" />
+    <ClInclude Include="Libraries\targa\include\targa.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scene\scene.evolscene">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+//================================================================
+// ** Ejemplo de escena con un objeto para cuando cargue modelos
+//================================================================
+
+<scene name="Escena 1" id ="0" skybox="Assets\\textures\\sky-cube-map-">
+  <entity id="box">
+    <components>
+      <component type="transform" critical="true">
+        <position>0, 0, 0</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>1, 1, 1</scale>
+      </component>
+      <component type="physics" critical="true">
+        <shape>capsule</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="render" critical="true">
+        <model>tree.obj</model>
+        <material>tree.material</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="script" critical="false">
+        <source>hero.lua</source>
+      </component>
+    </components>
+  </entity>
+</scene>
+-->
+
+<scene name="Escena 1" id ="0" skybox="Assets\\textures\\sky-cube-map-">
+  <entity id="player" name="player">
+    <components>
+      <component type="transform" critical="true">
+        <position>0, 3, -15</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>0.3, 0.5, 0.5</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>dynamic</bodyType>
+        <shape>capsule</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="true">
+        <source>jump.lua</source>
+      </component>
+      <component type="input" critical="true">
+        <key></key>
+      </component>
+      <component type="control" critical="true">
+        <key></key>
+      </component>
+    </components>
+  </entity>
+  <entity id="key" name="key0">
+    <components>
+      <component type="transform" critical="true">
+        <position>-3, -2, -15</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>0.1, 0.3, 0.3</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+  <entity id="key" name="key1">
+    <components>
+      <component type="transform" critical="true">
+        <position>-3, -2, -10</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>0.1, 0.3, 0.3</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+  <entity id="key" name="key2">
+    <components>
+      <component type="transform" critical="true">
+        <position>3, -2, -5</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>0.1, 0.3, 0.3</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+  <entity id="key" name="key3">
+    <components>
+      <component type="transform" critical="true">
+        <position>3, -2, -15</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>0.1, 0.3, 0.3</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+  <entity id="key" name="key4">
+    <components>
+      <component type="transform" critical="true">
+        <position>-2, -2, -5</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>0.1, 0.3, 0.3</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+  <entity id="floor" name="b">
+    <components>
+      <component type="transform" critical="true">
+        <position>0, -3, -15</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>5, 0.5, 15</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+  <entity id="wall" name="wall1">
+    <components>
+      <component type="transform" critical="true">
+        <position>-6, -3, -15</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>0.5,10, 15</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+  <entity id="wall" name="wall2">
+    <components>
+      <component type="transform" critical="true">
+        <position>6, -3, -15</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>0.5, 10, 15</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+  <entity id="wall" name="wall3">
+    <components>
+      <component type="transform" critical="true">
+        <position>0,0, -20</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>10, 10, 0.3</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+  <entity id="wall" name="wall4">
+    <components>
+      <component type="transform" critical="true">
+        <position>0, 0, 0</position>
+        <rotation>0, 0, 0</rotation>
+        <scale>10, 10, 0.3</scale>
+      </component>
+      <component type="render" critical="true">
+        <model>cube</model>
+        <material>none</material>
+        <scale>0.002</scale>
+      </component>
+      <component type="physics" critical="true">
+        <bodyType>static</bodyType>
+        <shape>box</shape>
+        <radius>0.3</radius>
+        <height>1.8</height>
+      </component>
+      <component type="script" critical="false">
+      </component>
+    </components>
+  </entity>
+</scene>
